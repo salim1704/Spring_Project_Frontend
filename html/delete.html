@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read Game Entries</title>
+    <title>Delete Game</title>
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -13,14 +13,14 @@
         <a id="toggle">MENU</a>
         <a class="nav-link " href="../index.html">HOME</a>
         <a class="nav-link" href="./create.html">CREATE</a>
-        <a class="nav-link" href="#">READ</a>
+        <a class="nav-link" href="./read.html">READ</a>
         <a class="nav-link" href="./update.html">UPDATE</a>
-        <a class="nav-link" href="./delete.html">DELETE</a>
+        <a class="nav-link" href="#">DELETE</a>
     </nav>
 
     <header>
-        <h1>All Games</h1>
-        <p>Read games</p>
+        <h1>Delete Games</h1>
+        <p>Delete game by their id</p>
     </header>
 
     <div class="container">
@@ -29,26 +29,14 @@
         </section>
         <main class="container">
             <form id="data-form">
-                <fieldset id="request-type">
-                    <legend>Request type</legend>
-                    <label for="method">Type:</label>
-
-                    <select name="method" id="method">
-                        <option value="ALL">Read a list of games</option>
-                        <option value="ID">Read a game by their id</option>
-                    </select>
-                </fieldset>
-                
-                <fieldset id="game-id-field" class="hide">
+                <fieldset id="movie-id-field">
                     <legend>Game id</legend>
                     <label for="id">ID:</label>
                     <input type="number" name="id" id="id">
                 </fieldset>
-                <button type="submit" style="width: 100%;">Submit</button>
+
+                <button type="submit">Delete</button>
             </form>
-            <div id="data-table">
-                
-            </div>
         </main>
     </div>
 
@@ -60,7 +48,7 @@
     <script src="../scripts/table-manager.js"></script>
     <script src="../scripts/error-handler.js"></script>
     <script src="../scripts/status-handler.js"></script>
-    <script src="../scripts/games/game.js"></script>
-    <script src="../scripts/games/read-game.js"></script>
+    <script src="../scripts/game/game.js"></script>
+    <script src="../scripts/game/delete-game.js"></script>
 </body>
 </html>
