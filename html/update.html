@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Game Entry</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a id="toggle">MENU</a>
+        <a class="nav-link " href="../index.html">HOME</a>
+        <a class="nav-link" href="./create.html">CREATE</a>
+        <a class="nav-link" href="./read.html">READ</a>
+        <a class="nav-link" href="#">UPDATE</a>
+        <a class="nav-link" href="./delete.html">DELETE</a>
+    </nav>  
+    
+    <header>
+        <h1>Game</h1>
+        <p>Update game information </p>
+    </header>
+
+    <div class="container">
+    <section id="banner">
+        <h2>Status: <span id="status"></span></h2>
+    </section>
+    <div id="data-table">
+
+    </div>
+    <main class="container">
+        <form id="data-form" class="container">
+            <fieldset id="game-id-field">
+                <legend>Game id</legend>
+                <label for="id">ID:</label>
+                <input type="number" name="id" id="id">
+            </fieldset>
+
+
+            <fieldset id="general-info">
+                <legend>General information</legend>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br>
+
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre"><br>
+
+                <label for="age rating">Age rating:</label>
+                <input type="number" id="age rating" name="age rating"><br>
+
+                <label for="releaseYear">Release Year:</label>
+                <input type="number" id="releaseYear" name="releaseYear" required><br>
+
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</div>
+
+    <footer>
+        <p><small>Abdul Salim- Copyright &copy; 2022</small></p>
+    </footer>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/table-manager.js"></script>
+    <script src="../scripts/error-handler.js"></script>
+    <script src="../scripts/status-handler.js"></script>
+    <script src="../scripts/games/game.js"></script>
+    <script src="../scripts/games/read-game.js"></script>
+</body>
+</html>
