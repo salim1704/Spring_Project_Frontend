@@ -37,7 +37,7 @@
     function readById() {
         setStatus('PREPARING GET REQUEST');
 
-        fetch(`http://localhost:8080/Game/${id.value}`, {
+        fetch(`http://localhost:8080/game/${id.value}`, {
             method: 'GET'
         }).then(response => {
             setStatus('RECEIVED RESPONSE');
