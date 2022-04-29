@@ -12,7 +12,7 @@ function Game(title, genre, ageRating, releaseYear, id = null) {
 
 const gameHeaders = ['id', 'title', 'genre','ageRating', 'releaseYear'];
 
-function renderMovieTable(games, containerElement) {
+function renderGameTable(games, containerElement) {
     const tableManager = new TableManager();
     const table = tableManager.createTable(gameHeaders, games);
     containerElement.replaceChildren(table);
